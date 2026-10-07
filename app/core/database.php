@@ -57,7 +57,7 @@ $this->stmt->bindValue($param, $value, $type);
 
 public function execute()
 {
-    $this->stmt->execute();
+    return $this->stmt->execute();
 }
 
 public function resultSet()
@@ -70,5 +70,9 @@ public function single()
 {
     $this->execute();
     return $this->stmt->fetch(PDO::FETCH_ASSOC);
+}
+public function rowCount()
+{
+    return $this->stmt->rowCount();
 }
 }
