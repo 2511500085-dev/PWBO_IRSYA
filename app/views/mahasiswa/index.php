@@ -40,12 +40,7 @@
                                class="badge badge-primary">
                                 Detail
                             </a>
-
-                            <a href="<?= BASEURL; ?>/mahasiswa/ubah/<?= $mhs['id']; ?>"
-                                class="badge badge-success float-right ml-1" data-toggle="modal" 
-                                data-target="#formModal">
-                                Ubah
-                            </a>
+                            
 
                             <a href="<?= BASEURL; ?>/mahasiswa/hapus/<?= $mhs['id']; ?>"
                                class="badge badge-danger mr-2"
